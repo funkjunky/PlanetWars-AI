@@ -1,0 +1,3453 @@
+Turn 1: 
+Planet ID	12 turn worth	potentialCost from ID(2)
+---------	-------------	-------------
+0				0				86
+1				0				211
+3				16				21
+4				0				21
+5				35				21
+6				0				21
+7				0				49
+8				0				49
+9				0				46
+10				6				46
+11				6				44
+12				0				44
+13				0				29
+14				12				29
+15				0				46
+16				24				46
+17				32				25
+18				0				25
+19				0				49
+20				0				49
+21				0				5
+22				10				5
+---
+---
+Planet ID	NumShips
+---------	--------
+0				85
+1				100
+2				100
+3				20
+4				20
+5				20
+6				20
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				24
+18				24
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	100		106
+1		2	100		-210
+0		3	20		21
+0		4	20		21
+0		5	20		21
+0		6	20		21
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		29
+0		14	28		29
+0		15	45		46
+0		16	45		46
+0		17	24		25
+0		18	24		25
+0		19	48		49
+0		20	48		49
+0		21	4		5
+0		22	4		5
+This is Turn 1!
+ships used in bestRecursive ID(2): 100
+size of cache is: 424
+final cache planets: 3219472
+i = 22
+moves form nicest Planets:
+sending [from, to, numships]: [2, 5, 21]
+sending [from, to, numships]: [2, 14, 29]
+sending [from, to, numships]: [2, 17, 25]
+sending [from, to, numships]: [2, 21, 5]
+sending [from, to, numships]: [2, 22, 5]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 5, 21]
+sending [from, to, numships]: [2, 14, 29]
+sending [from, to, numships]: [2, 17, 25]
+sending [from, to, numships]: [2, 21, 5]
+sending [from, to, numships]: [2, 22, 5]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 5, 21]
+sending [from, to, numships]: [2, 14, 29]
+sending [from, to, numships]: [2, 17, 25]
+sending [from, to, numships]: [2, 21, 5]
+sending [from, to, numships]: [2, 22, 5]
+Done attack.
+0.01 s
+
+Turn 2: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				20
+2				20
+3				20
+4				20
+5				20
+6				20
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				24
+18				24
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		6	21	4
+1		13	29	7
+1		18	25	3
+1		21	5	9
+1		22	5	11
+2		5	21	4
+2		14	29	7
+2		17	25	3
+2		21	5	11
+2		22	5	9
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	20		26
+1		2	20		-130
+0		3	20		21
+0		4	20		21
+0		5	20		43
+0		6	20		43
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		59
+0		14	28		59
+0		15	45		46
+0		16	45		46
+0		17	24		51
+0		18	24		51
+0		19	48		49
+0		20	48		49
+0		21	4		11
+0		22	4		11
+This is Turn 2!
+ships used in bestRecursive ID(2): 20
+size of cache is: 18
+final cache planets: 131072
+i = 18
+moves form nicest Planets:
+sending [from, to, numships]: [2, 21, 11]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 21, 11]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 21, 11]
+Done attack.
+0.00 s
+
+Turn 3: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				14
+2				14
+3				20
+4				20
+5				20
+6				20
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				24
+18				24
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		6	21	3
+1		13	29	6
+1		18	25	2
+1		21	5	8
+1		22	5	10
+2		5	21	3
+2		14	29	6
+2		17	25	2
+2		21	5	10
+2		22	5	8
+1		22	11	11
+2		21	11	11
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	14		20
+1		2	14		-124
+0		3	20		21
+0		4	20		21
+0		5	20		43
+0		6	20		43
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		59
+0		14	28		59
+0		15	45		46
+0		16	45		46
+0		17	24		51
+0		18	24		51
+0		19	48		49
+0		20	48		49
+0		21	4		17
+0		22	4		17
+This is Turn 3!
+ships used in bestRecursive ID(2): 14
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.00 s
+
+Turn 4: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				19
+2				19
+3				20
+4				20
+5				20
+6				20
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				24
+18				24
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		6	21	2
+1		13	29	5
+1		18	25	1
+1		21	5	7
+1		22	5	9
+2		5	21	2
+2		14	29	5
+2		17	25	1
+2		21	5	9
+2		22	5	7
+1		22	11	10
+2		21	11	10
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	19		25
+1		2	19		-129
+0		3	20		21
+0		4	20		21
+0		5	20		43
+0		6	20		43
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		59
+0		14	28		59
+0		15	45		46
+0		16	45		46
+0		17	24		51
+0		18	24		51
+0		19	48		49
+0		20	48		49
+0		21	4		17
+0		22	4		17
+This is Turn 4!
+ships used in bestRecursive ID(2): 19
+size of cache is: 18
+final cache planets: 131072
+i = 18
+moves form nicest Planets:
+sending [from, to, numships]: [2, 21, 17]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 21, 17]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 21, 17]
+Done attack.
+0.00 s
+
+Turn 5: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				7
+2				7
+3				20
+4				20
+5				20
+6				20
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				1
+18				1
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		6	21	1
+1		13	29	4
+1		21	5	6
+1		22	5	8
+2		5	21	1
+2		14	29	4
+2		21	5	8
+2		22	5	6
+1		22	11	9
+2		21	11	9
+1		22	17	11
+2		21	17	11
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	7		13
+1		2	7		-117
+0		3	20		21
+0		4	20		21
+0		5	20		43
+0		6	20		43
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		59
+0		14	28		59
+0		15	45		46
+0		16	45		46
+1		17	1		-73
+2		18	1		18
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 5!
+ships used in bestRecursive ID(2): 7
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 1
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.00 s
+
+Turn 6: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				12
+3				20
+4				20
+5				1
+6				1
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				5
+18				5
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		13	29	3
+1		21	5	5
+1		22	5	7
+2		14	29	3
+2		21	5	7
+2		22	5	5
+1		22	11	8
+2		21	11	8
+1		22	17	10
+2		21	17	10
+1		18	6	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	12		-122
+0		3	20		21
+0		4	20		21
+1		5	1		-111
+2		6	1		27
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		59
+0		14	28		59
+0		15	45		46
+0		16	45		46
+1		17	5		-77
+2		18	5		28
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 6!
+ships used in bestRecursive ID(2): 12
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 1
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 5
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.00 s
+
+Turn 7: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				17
+3				20
+4				20
+5				6
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				9
+18				9
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		13	29	2
+1		21	5	4
+1		22	5	6
+2		14	29	2
+2		21	5	6
+2		22	5	4
+1		22	11	7
+2		21	11	7
+1		22	17	9
+2		21	17	9
+1		18	6	2
+1		18	5	3
+6		13	0	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	17		-127
+0		3	20		21
+0		4	20		21
+1		5	6		-116
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		85
+0		14	28		59
+0		15	45		46
+0		16	45		46
+1		17	9		-81
+2		18	9		51
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 7!
+ships used in bestRecursive ID(2): 17
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 6
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 9
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.00 s
+
+Turn 8: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				22
+3				20
+4				20
+5				11
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				28
+14				28
+15				45
+16				45
+17				13
+18				13
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		13	29	1
+1		21	5	3
+1		22	5	5
+2		14	29	1
+2		21	5	5
+2		22	5	3
+1		22	11	6
+2		21	11	6
+1		22	17	8
+2		21	17	8
+1		18	6	1
+1		18	5	2
+6		13	0	2
+1		18	5	3
+6		13	5	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	22		-132
+0		3	20		21
+0		4	20		21
+1		5	11		-121
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+0		13	28		103
+0		14	28		59
+0		15	45		46
+0		16	45		46
+1		17	13		-85
+2		18	13		75
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 8!
+ships used in bestRecursive ID(2): 22
+size of cache is: 33
+final cache planets: 4
+i = 18
+moves form nicest Planets:
+sending [from, to, numships]: [2, 3, 21]
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 11
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 13
+size of cache is: 18
+final cache planets: 0
+i = 18
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 3, 21]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 3, 21]
+Done attack.
+0.01 s
+
+Turn 9: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				6
+3				20
+4				20
+5				16
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				1
+14				1
+15				45
+16				45
+17				17
+18				23
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		21	5	2
+1		22	5	4
+2		21	5	4
+2		22	5	2
+1		22	11	5
+2		21	11	5
+1		22	17	7
+2		21	17	7
+1		18	5	1
+6		13	0	1
+1		18	5	2
+6		13	5	2
+1		18	5	3
+6		13	5	3
+2		3	21	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	6		-116
+0		3	20		43
+0		4	20		21
+1		5	16		-126
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	1		50
+1		14	1		-58
+0		15	45		46
+0		16	45		46
+1		17	17		-89
+2		18	23		82
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 9!
+ships used in bestRecursive ID(2): 6
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 16
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 1
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 17
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 10: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				11
+3				20
+4				20
+5				21
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				4
+15				45
+16				45
+17				21
+18				11
+19				48
+20				48
+21				4
+22				4
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		21	5	1
+1		22	5	3
+2		21	5	3
+2		22	5	1
+1		22	11	4
+2		21	11	4
+1		22	17	6
+2		21	17	6
+1		18	5	1
+6		13	5	1
+1		18	5	2
+6		13	5	2
+2		3	21	2
+1		18	5	3
+6		18	5	5
+13		18	0	5
+18		4	21	1
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	11		-121
+0		3	20		43
+0		4	20		43
+1		5	21		-131
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		47
+1		14	4		-61
+0		15	45		46
+0		16	45		46
+1		17	21		-93
+2		18	11		106
+0		19	48		49
+0		20	48		49
+0		21	4		30
+0		22	4		30
+This is Turn 10!
+ships used in bestRecursive ID(2): 11
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 21
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 4
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 21
+size of cache is: 17
+final cache planets: 0
+i = 17
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 11: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				16
+3				20
+4				1
+5				26
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				9
+14				7
+15				45
+16				45
+17				25
+18				20
+19				48
+20				48
+21				1
+22				1
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		22	5	2
+2		21	5	2
+1		22	11	3
+2		21	11	3
+1		22	17	5
+2		21	17	5
+1		18	5	1
+6		13	5	1
+2		3	21	1
+1		18	5	2
+6		18	5	4
+13		18	0	4
+1		18	5	3
+6		18	5	5
+13		18	3	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	16		-126
+0		3	20		43
+2		4	1		10
+1		5	26		-136
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	9		39
+1		14	7		-64
+0		15	45		46
+0		16	45		46
+1		17	25		-97
+2		18	20		159
+0		19	48		49
+0		20	48		49
+2		21	1		41
+1		22	1		-50
+This is Turn 11!
+planet in danger id(22), NumShips: 1
+testing endangered planet(22)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		22	2		5
+2		22	3		11
+2		22	5		17
+---
+---
+safe planets to grab from: 4
+incomingFleets.size: 3
+incomingFleets turns remaining: 2
+safe planets turn distance: 6
+not enough to defend i guess? Even with numships = 75
+ships used in bestRecursive ID(2): 16
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 26
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 7
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 25
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 12: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				21
+3				1
+4				3
+5				31
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				9
+14				10
+15				45
+16				45
+17				29
+18				29
+19				48
+20				48
+21				6
+22				6
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		22	5	1
+2		21	5	1
+1		22	11	2
+2		21	11	2
+1		22	17	4
+2		21	17	4
+1		18	5	1
+6		18	5	3
+13		18	0	3
+1		18	5	2
+6		18	5	4
+13		18	3	4
+1		18	5	3
+4		18	0	1
+6		18	5	5
+13		18	8	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	21		-131
+1		3	1		-39
+2		4	3		12
+1		5	31		-141
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	9		34
+1		14	10		-67
+0		15	45		46
+0		16	45		46
+1		17	29		-101
+2		18	29		194
+0		19	48		49
+0		20	48		49
+2		21	6		56
+1		22	6		-65
+This is Turn 12!
+planet in danger id(22), NumShips: 6
+testing endangered planet(22)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		22	1		5
+2		22	2		11
+2		22	4		17
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 3
+incomingFleets turns remaining: 1
+safe planets turn distance: 6
+not enough to defend i guess? Even with numships = 98
+ships used in bestRecursive ID(2): 21
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 1
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 31
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 10
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 29
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 13: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				26
+3				3
+4				3
+5				36
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				13
+15				45
+16				45
+17				33
+18				38
+19				48
+20				48
+21				6
+22				6
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		22	11	1
+2		21	11	1
+1		22	17	3
+2		21	17	3
+6		18	5	2
+13		18	0	2
+1		18	5	1
+6		18	5	3
+13		18	3	3
+1		18	5	2
+6		18	5	4
+13		18	8	4
+1		18	5	3
+4		18	2	1
+6		18	5	5
+13		18	8	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	26		-136
+1		3	3		-41
+2		4	3		12
+1		5	36		-146
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	13		-70
+0		15	45		46
+0		16	45		46
+1		17	33		-105
+2		18	38		252
+0		19	48		49
+0		20	48		49
+2		21	6		61
+1		22	6		-70
+This is Turn 13!
+planet in danger id(22), NumShips: 6
+testing endangered planet(22)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		22	1		11
+2		22	3		17
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 2
+incomingFleets turns remaining: 1
+safe planets turn distance: 6
+not enough to defend i guess? Even with numships = 117
+ships used in bestRecursive ID(2): 26
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 3
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 36
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 13
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 33
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 14: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				31
+3				5
+4				3
+5				41
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				16
+15				45
+16				45
+17				37
+18				15
+19				48
+20				48
+21				0
+22				0
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		22	17	2
+2		21	17	2
+6		18	5	1
+13		18	0	1
+6		18	5	2
+13		18	3	2
+1		18	5	1
+6		18	5	3
+13		18	8	3
+1		18	5	2
+6		18	5	4
+13		18	8	4
+1		18	5	3
+4		18	2	1
+6		18	5	5
+13		18	3	5
+18		3	34	14
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	31		-141
+1		3	5		-21
+2		4	3		12
+1		5	41		-151
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	16		-73
+0		15	45		46
+0		16	45		46
+1		17	37		-109
+2		18	15		276
+0		19	48		49
+0		20	48		49
+2		21	0		48
+1		22	0		-57
+This is Turn 14!
+planet in danger id(3), NumShips: 5
+planet in danger id(22), NumShips: 0
+testing endangered planet(22)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		22	2		17
+---
+---
+safe planets to grab from: 4
+incomingFleets.size: 1
+incomingFleets turns remaining: 2
+safe planets turn distance: 6
+not enough to defend i guess? Even with numships = 130
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		3	14		34
+---
+---
+safe planets to grab from: 4
+incomingFleets.size: 1
+incomingFleets turns remaining: 14
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 17, 3, 34
+ships used in bestRecursive ID(2): 31
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 41
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 16
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 37
+size of cache is: 29
+final cache planets: 4
+i = 16
+moves form nicest Planets:
+sending [from, to, numships]: [17, 4, 34]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [17, 4, 34]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [17, 3, 1]
+sending [from, to, numships]: [17, 4, 34]
+Done attack.
+0.01 s
+
+Turn 15: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				36
+3				7
+4				3
+5				46
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				19
+15				45
+16				45
+17				6
+18				31
+19				48
+20				48
+21				5
+22				5
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+1		22	17	1
+2		21	17	1
+6		18	5	1
+13		18	3	1
+6		18	5	2
+13		18	8	2
+1		18	5	1
+6		18	5	3
+13		18	8	3
+1		18	5	2
+6		18	5	4
+13		18	3	4
+18		3	34	13
+1		18	5	3
+4		18	2	1
+6		18	5	5
+13		18	3	5
+17		3	1	1
+17		4	34	14
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	36		-146
+1		3	7		-29
+2		4	3		10
+1		5	46		-156
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	19		-76
+0		15	45		46
+0		16	45		46
+1		17	6		-78
+2		18	31		317
+0		19	48		49
+0		20	48		49
+2		21	5		63
+1		22	5		-72
+This is Turn 15!
+planet in danger id(22), NumShips: 5
+testing endangered planet(22)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		22	1		17
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 1
+incomingFleets turns remaining: 1
+safe planets turn distance: 6
+not enough to defend i guess? Even with numships = 119
+ships used in bestRecursive ID(2): 36
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 7
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 46
+size of cache is: 31
+final cache planets: 2048
+i = 15
+moves form nicest Planets:
+sending [from, to, numships]: [5, 16, 46]
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 19
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 6
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [5, 16, 46]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [5, 16, 46]
+Done attack.
+0.01 s
+
+Turn 16: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				41
+3				10
+4				5
+5				5
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				22
+15				45
+16				45
+17				10
+18				25
+19				48
+20				48
+21				7
+22				7
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+6		18	5	1
+13		18	8	1
+6		18	5	2
+13		18	8	2
+1		18	5	1
+6		18	5	3
+13		18	3	3
+18		3	34	12
+1		18	5	2
+6		18	5	4
+13		18	3	4
+17		4	34	13
+18		4	3	1
+1		18	5	3
+6		18	5	5
+13		18	3	5
+18		3	22	14
+5		16	46	2
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	41		-151
+1		3	10		-58
+2		4	5		16
+1		5	5		-115
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	22		-79
+0		15	45		46
+0		16	45		93
+1		17	10		-82
+2		18	25		311
+0		19	48		49
+0		20	48		49
+1		21	7		-57
+2		22	7		68
+This is Turn 16!
+planet in danger id(3), NumShips: 10
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		3	12		34
+2		3	14		22
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 2
+incomingFleets turns remaining: 12
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 2, 3, 8
+ships used in bestRecursive ID(2): 41
+size of cache is: 29
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 5
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 22
+size of cache is: 29
+final cache planets: 4
+i = 16
+moves form nicest Planets:
+sending [from, to, numships]: [14, 4, 22]
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 10
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 7
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [14, 4, 22]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 3, 8]
+sending [from, to, numships]: [17, 3, 10]
+sending [from, to, numships]: [14, 4, 22]
+Done attack.
+0.01 s
+
+Turn 17: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				38
+3				12
+4				6
+5				10
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				3
+15				45
+16				45
+17				4
+18				23
+19				48
+20				48
+21				12
+22				12
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+6		18	5	1
+13		18	8	1
+6		18	5	2
+13		18	3	2
+18		3	34	11
+1		18	5	1
+6		18	5	3
+13		18	3	3
+17		4	34	12
+1		18	5	2
+6		18	5	4
+13		18	3	4
+18		3	22	13
+5		16	46	1
+1		22	5	11
+4		22	4	8
+6		22	5	13
+13		22	3	10
+18		22	24	8
+2		3	8	3
+17		3	10	1
+14		4	22	15
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	38		-148
+1		3	12		-78
+2		4	6		35
+1		5	10		-120
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	3		-60
+0		15	45		46
+0		16	45		93
+1		17	4		-76
+2		18	23		199
+0		19	48		49
+0		20	48		49
+1		21	12		-62
+2		22	12		359
+This is Turn 17!
+ships used in bestRecursive ID(2): 38
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 12
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 10
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 3
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 4
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 12
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 18: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				43
+3				24
+4				8
+5				15
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				6
+15				45
+16				1
+17				8
+18				41
+19				48
+20				48
+21				17
+22				17
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+6		18	5	1
+13		18	3	1
+18		3	34	10
+6		18	5	2
+13		18	3	2
+17		4	34	11
+1		18	5	1
+6		18	5	3
+13		18	3	3
+18		3	22	12
+1		22	5	10
+4		22	4	7
+6		22	5	12
+13		22	3	9
+18		22	24	7
+2		3	8	2
+14		4	22	14
+18		4	4	1
+1		18	5	3
+6		18	5	5
+13		18	3	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	43		-153
+1		3	24		-80
+2		4	8		47
+1		5	15		-125
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	6		-63
+0		15	45		46
+1		16	1		-85
+1		17	8		-80
+2		18	41		196
+0		19	48		49
+0		20	48		49
+1		21	17		-67
+2		22	17		344
+This is Turn 18!
+ships used in bestRecursive ID(2): 43
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 24
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 15
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 6
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 1
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 8
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 17
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 19: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				48
+3				26
+4				14
+5				20
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				9
+15				45
+16				5
+17				12
+18				42
+19				48
+20				48
+21				22
+22				22
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	9
+6		18	5	1
+13		18	3	1
+17		4	34	10
+6		18	5	2
+13		18	3	2
+18		3	22	11
+1		22	5	9
+4		22	4	6
+6		22	5	11
+13		22	3	8
+18		22	24	6
+2		3	8	1
+14		4	22	13
+1		18	5	2
+6		18	5	4
+13		18	3	4
+18		4	16	1
+1		18	5	3
+6		18	5	5
+13		18	3	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	48		-158
+1		3	26		-86
+2		4	14		49
+1		5	20		-130
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		46
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	9		-66
+0		15	45		46
+1		16	5		-89
+1		17	12		-84
+2		18	42		234
+0		19	48		49
+0		20	48		49
+1		21	22		-72
+2		22	22		334
+This is Turn 19!
+ships used in bestRecursive ID(2): 48
+size of cache is: 32
+final cache planets: 128
+i = 16
+moves form nicest Planets:
+sending [from, to, numships]: [2, 10, 46]
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 26
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 20
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 9
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 5
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 12
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 22
+size of cache is: 16
+final cache planets: 0
+i = 16
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 10, 46]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 10, 46]
+Done attack.
+0.01 s
+
+Turn 20: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				7
+3				36
+4				19
+5				25
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				12
+15				45
+16				9
+17				16
+18				13
+19				48
+20				48
+21				27
+22				27
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	8
+17		4	34	9
+6		18	5	1
+13		18	3	1
+18		3	22	10
+1		22	5	8
+4		22	4	5
+6		22	5	10
+13		22	3	7
+18		22	24	5
+14		4	22	12
+1		18	5	1
+6		18	5	3
+13		18	3	3
+1		18	5	2
+6		18	5	4
+13		18	3	4
+1		22	5	11
+4		22	13	8
+6		22	5	13
+13		22	3	10
+18		22	41	8
+2		10	46	9
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	7		-117
+1		3	36		-108
+2		4	19		68
+1		5	25		-135
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	12		-69
+0		15	45		46
+1		16	9		-93
+1		17	16		-88
+2		18	13		145
+0		19	48		49
+0		20	48		49
+1		21	27		-77
+2		22	27		756
+This is Turn 20!
+ships used in bestRecursive ID(2): 7
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 36
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 25
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 12
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 9
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 16
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 27
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 21: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				12
+3				38
+4				3
+5				30
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				15
+15				45
+16				13
+17				20
+18				18
+19				48
+20				48
+21				32
+22				32
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	7
+17		4	34	8
+18		3	22	9
+1		22	5	7
+4		22	4	4
+6		22	5	9
+13		22	3	6
+18		22	24	4
+14		4	22	11
+6		18	5	2
+13		18	3	2
+1		18	5	1
+6		18	5	3
+13		18	3	3
+1		22	5	10
+4		22	13	7
+6		22	5	12
+13		22	3	9
+18		22	41	7
+2		10	46	8
+1		22	5	11
+4		22	18	8
+6		22	5	13
+13		22	3	10
+18		22	12	8
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	12		-122
+1		3	38		-116
+2		4	3		32
+1		5	30		-140
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		44
+0		12	43		44
+2		13	4		29
+1		14	15		-72
+0		15	45		46
+1		16	13		-97
+1		17	20		-92
+2		18	18		86
+0		19	48		49
+0		20	48		49
+1		21	32		-82
+2		22	32		1404
+This is Turn 21!
+ships used in bestRecursive ID(2): 12
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 38
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 30
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 15
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 13
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 20
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 32
+size of cache is: 19
+final cache planets: 256
+i = 14
+moves form nicest Planets:
+sending [from, to, numships]: [21, 13, 29]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [21, 13, 29]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [21, 13, 29]
+Done attack.
+0.01 s
+
+Turn 22: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				17
+3				40
+4				5
+5				35
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				18
+15				45
+16				17
+17				24
+18				12
+19				48
+20				48
+21				8
+22				37
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	6
+17		4	34	7
+18		3	22	8
+1		22	5	6
+4		22	4	3
+6		22	5	8
+13		22	3	5
+18		22	24	3
+14		4	22	10
+6		18	5	1
+13		18	3	1
+6		18	5	2
+13		18	3	2
+1		22	5	9
+4		22	13	6
+6		22	5	11
+13		22	3	8
+18		22	41	6
+2		10	46	7
+1		22	5	10
+4		22	18	7
+6		22	5	12
+13		22	3	9
+18		22	12	7
+18		4	15	1
+1		18	5	3
+6		18	5	5
+13		18	3	5
+21		13	29	7
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	17		-127
+1		3	40		-124
+2		4	5		49
+1		5	35		-145
+2		6	6		32
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		44
+0		12	43		44
+2		13	4		16
+1		14	18		-75
+0		15	45		46
+1		16	17		-101
+1		17	24		-96
+2		18	12		131
+0		19	48		49
+0		20	48		49
+1		21	8		-58
+2		22	37		1364
+This is Turn 22!
+ships used in bestRecursive ID(2): 17
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 40
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 35
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 18
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 17
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 24
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(21): 8
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 23: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				22
+3				42
+4				18
+5				40
+6				7
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				7
+14				21
+15				45
+16				21
+17				28
+18				13
+19				48
+20				48
+21				13
+22				13
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	5
+17		4	34	6
+18		3	22	7
+1		22	5	5
+4		22	4	2
+6		22	5	7
+13		22	3	4
+18		22	24	2
+14		4	22	9
+6		18	5	1
+13		18	3	1
+1		22	5	8
+4		22	13	5
+6		22	5	10
+13		22	3	7
+18		22	41	5
+2		10	46	6
+1		22	5	9
+4		22	18	6
+6		22	5	11
+13		22	3	8
+18		22	12	6
+1		18	5	2
+6		18	5	4
+13		18	3	4
+21		13	29	6
+6		13	4	3
+1		6	5	4
+4		6	4	6
+18		6	11	5
+22		21	29	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	22		-132
+1		3	42		-132
+2		4	18		47
+1		5	40		-150
+2		6	7		124
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		44
+0		12	43		44
+2		13	7		34
+1		14	21		-78
+0		15	45		46
+1		16	21		-105
+1		17	28		-100
+2		18	13		84
+0		19	48		49
+0		20	48		49
+1		21	13		-62
+2		22	13		1300
+This is Turn 23!
+planet in danger id(21), NumShips: 13
+testing endangered planet(21)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		21	3		29
+---
+---
+safe planets to grab from: 6
+incomingFleets.size: 1
+incomingFleets turns remaining: 3
+safe planets turn distance: 9
+not enough to defend i guess? Even with numships = 187
+ships used in bestRecursive ID(2): 22
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 42
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 40
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 21
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 21
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 28
+size of cache is: 14
+final cache planets: 0
+i = 14
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 24: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				27
+3				44
+4				20
+5				45
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				24
+15				45
+16				25
+17				32
+18				21
+19				48
+20				48
+21				18
+22				18
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	4
+17		4	34	5
+18		3	22	6
+1		22	5	4
+4		22	4	1
+6		22	5	6
+13		22	3	3
+18		22	24	1
+14		4	22	8
+1		22	5	7
+4		22	13	4
+6		22	5	9
+13		22	3	6
+18		22	41	4
+2		10	46	5
+1		22	5	8
+4		22	18	5
+6		22	5	10
+13		22	3	7
+18		22	12	5
+1		18	5	1
+6		18	5	3
+13		18	3	3
+21		13	29	5
+6		13	4	2
+1		6	5	3
+4		6	4	5
+18		6	11	4
+22		21	29	2
+18		4	4	1
+1		18	5	3
+6		18	6	5
+13		18	6	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	27		-137
+1		3	44		-140
+2		4	20		83
+1		5	45		-155
+2		6	6		108
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		44
+0		12	43		44
+2		13	4		34
+1		14	24		-81
+0		15	45		46
+1		16	25		-109
+1		17	32		-104
+2		18	21		111
+0		19	48		49
+0		20	48		49
+1		21	18		-77
+2		22	18		1265
+This is Turn 24!
+planet in danger id(21), NumShips: 18
+testing endangered planet(21)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		21	2		29
+---
+---
+safe planets to grab from: 6
+incomingFleets.size: 1
+incomingFleets turns remaining: 2
+safe planets turn distance: 9
+not enough to defend i guess? Even with numships = 215
+ships used in bestRecursive ID(2): 27
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 44
+size of cache is: 22
+final cache planets: 128
+i = 15
+moves form nicest Planets:
+sending [from, to, numships]: [3, 11, 44]
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 45
+size of cache is: 22
+final cache planets: 128
+i = 15
+moves form nicest Planets:
+sending [from, to, numships]: [5, 11, 44]
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 24
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 25
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 32
+size of cache is: 15
+final cache planets: 0
+i = 15
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [3, 11, 44]
+sending [from, to, numships]: [5, 11, 44]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [3, 11, 44]
+Done attack.
+0.01 s
+
+Turn 25: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				32
+3				2
+4				7
+5				50
+6				6
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				4
+14				27
+15				45
+16				29
+17				36
+18				10
+19				48
+20				48
+21				23
+22				51
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	3
+17		4	34	4
+18		3	22	5
+1		22	5	3
+6		22	5	5
+13		22	3	2
+14		4	22	7
+1		22	5	6
+4		22	13	3
+6		22	5	8
+13		22	3	5
+18		22	41	3
+2		10	46	4
+1		22	5	7
+4		22	18	4
+6		22	5	9
+13		22	3	6
+18		22	12	4
+6		18	5	2
+13		18	3	2
+21		13	29	4
+6		13	4	1
+1		6	5	2
+4		6	4	4
+18		6	11	3
+22		21	29	1
+1		18	5	2
+6		18	6	4
+13		18	6	4
+1		21	5	9
+4		21	19	7
+6		21	5	10
+13		21	3	7
+18		21	20	5
+3		11	44	6
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	32		-142
+1		3	2		-60
+2		4	7		36
+1		5	50		-160
+2		6	6		98
+0		7	48		49
+0		8	48		49
+0		9	45		46
+0		10	45		93
+0		11	43		89
+0		12	43		44
+2		13	4		37
+1		14	27		-84
+0		15	45		46
+1		16	29		-113
+1		17	36		-108
+2		18	10		73
+0		19	48		49
+0		20	48		49
+1		21	23		-247
+2		22	51		1006
+This is Turn 25!
+planet in danger id(3), NumShips: 2
+planet in danger id(21), NumShips: 23
+testing endangered planet(21)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		21	1		29
+2		21	5		20
+2		21	7		19
+2		21	7		3
+2		21	9		5
+2		21	10		5
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 6
+incomingFleets turns remaining: 1
+safe planets turn distance: 9
+not enough to defend i guess? Even with numships = 199
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		3	3		34
+2		3	5		22
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 2
+incomingFleets turns remaining: 3
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 17, 3, 34
+sending fleet: id, destID, ships: 17, 3, 22
+ships used in bestRecursive ID(2): 32
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 50
+size of cache is: 31
+final cache planets: 8
+i = 12
+moves form nicest Planets:
+sending [from, to, numships]: [5, 7, 49]
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 27
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 29
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 36
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [5, 7, 49]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [17, 3, 10]
+sending [from, to, numships]: [5, 7, 49]
+Done attack.
+0.01 s
+
+Turn 26: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				37
+3				4
+4				9
+5				6
+6				11
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				11
+14				30
+15				45
+16				33
+17				30
+18				14
+19				48
+20				48
+21				1
+22				10
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	2
+17		4	34	3
+18		3	22	4
+1		22	5	2
+6		22	5	4
+13		22	3	1
+14		4	22	6
+1		22	5	5
+4		22	13	2
+6		22	5	7
+13		22	3	4
+18		22	41	2
+2		10	46	3
+1		22	5	6
+4		22	18	3
+6		22	5	8
+13		22	3	5
+18		22	12	3
+6		18	5	1
+13		18	3	1
+21		13	29	3
+1		6	5	1
+4		6	4	3
+18		6	11	2
+1		18	5	1
+6		18	6	3
+13		18	6	3
+1		21	5	8
+4		21	19	6
+6		21	5	9
+13		21	3	6
+18		21	20	4
+3		11	44	5
+17		3	10	1
+5		7	49	11
+1		18	5	3
+22		9	46	8
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	37		-147
+1		3	4		-72
+2		4	9		38
+1		5	6		-116
+2		6	11		93
+0		7	48		99
+0		8	48		49
+0		9	45		93
+0		10	45		93
+0		11	43		89
+0		12	43		44
+2		13	11		47
+1		14	30		-87
+0		15	45		46
+1		16	33		-117
+1		17	30		-102
+2		18	14		78
+0		19	48		49
+0		20	48		49
+2		21	1		303
+2		22	10		930
+This is Turn 26!
+planet in danger id(3), NumShips: 4
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+1		3	1		10
+2		3	2		34
+2		3	4		22
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 3
+incomingFleets turns remaining: 1
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 17, 3, 34
+ships used in bestRecursive ID(2): 37
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 6
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 30
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 33
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 30
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [17, 3, 16]
+Done attack.
+0.01 s
+
+Turn 27: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				42
+3				16
+4				11
+5				11
+6				21
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				14
+14				33
+15				45
+16				37
+17				18
+18				31
+19				48
+20				48
+21				6
+22				18
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	34	1
+17		4	34	2
+18		3	22	3
+1		22	5	1
+6		22	5	3
+14		4	22	5
+1		22	5	4
+4		22	13	1
+6		22	5	6
+13		22	3	3
+18		22	41	1
+2		10	46	2
+1		22	5	5
+4		22	18	2
+6		22	5	7
+13		22	3	4
+18		22	12	2
+21		13	29	2
+4		6	4	2
+18		6	11	1
+6		18	6	2
+13		18	6	2
+1		21	5	7
+4		21	19	5
+6		21	5	8
+13		21	3	5
+18		21	20	3
+3		11	44	4
+5		7	49	10
+1		18	5	2
+22		9	46	7
+1		18	5	3
+17		3	16	1
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	42		-152
+1		3	16		-98
+2		4	11		44
+1		5	11		-121
+2		6	21		78
+0		7	48		99
+0		8	48		49
+0		9	45		93
+0		10	45		93
+0		11	43		89
+0		12	43		44
+2		13	14		56
+1		14	33		-90
+0		15	45		46
+1		16	37		-121
+1		17	18		-90
+2		18	31		95
+0		19	48		49
+0		20	48		49
+2		21	6		293
+2		22	18		879
+This is Turn 27!
+planet in danger id(3), NumShips: 16
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		3	1		34
+1		3	1		16
+2		3	3		22
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 3
+incomingFleets turns remaining: 1
+safe planets turn distance: 2
+not enough to defend i guess? Even with numships = 157
+ships used in bestRecursive ID(2): 42
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 11
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 33
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 37
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 18
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+Done attack.
+0.01 s
+
+Turn 28: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				47
+3				0
+4				13
+5				16
+6				37
+7				48
+8				48
+9				45
+10				45
+11				43
+12				43
+13				17
+14				36
+15				45
+16				41
+17				22
+18				34
+19				48
+20				48
+21				11
+22				82
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+17		4	34	1
+18		3	22	2
+6		22	5	2
+14		4	22	4
+1		22	5	3
+6		22	5	5
+13		22	3	2
+2		10	46	1
+1		22	5	4
+4		22	18	1
+6		22	5	6
+13		22	3	3
+18		22	12	1
+21		13	29	1
+4		6	4	1
+6		18	6	1
+13		18	6	1
+1		21	5	6
+4		21	19	4
+6		21	5	7
+13		21	3	4
+18		21	20	2
+3		11	44	3
+5		7	49	9
+1		18	5	1
+22		9	46	6
+1		18	5	2
+18		4	1	1
+1		18	5	3
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	47		-157
+1		3	0		-52
+2		4	13		48
+1		5	16		-126
+2		6	37		67
+0		7	48		99
+0		8	48		49
+0		9	45		93
+0		10	45		93
+0		11	43		89
+0		12	43		44
+2		13	17		65
+1		14	36		-93
+0		15	45		46
+1		16	41		-125
+1		17	22		-94
+2		18	34		129
+0		19	48		49
+0		20	48		49
+2		21	11		283
+2		22	82		500
+This is Turn 28!
+planet in danger id(3), NumShips: 0
+testing endangered planet(3)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		3	2		22
+---
+---
+safe planets to grab from: 5
+incomingFleets.size: 1
+incomingFleets turns remaining: 2
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 17, 3, 22
+ships used in bestRecursive ID(2): 47
+size of cache is: 23
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 16
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 36
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 41
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(17): 22
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+starting closest Optimal...
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [17, 3, 18]
+Done attack.
+0.01 s
+
+Turn 29: 
+Planet ID	NumShips
+---------	--------
+0				85
+1				6
+2				52
+3				2
+4				18
+5				21
+6				46
+7				48
+8				48
+9				45
+10				1
+11				43
+12				43
+13				9
+14				39
+15				45
+16				45
+17				8
+18				55
+19				48
+20				48
+21				16
+22				70
+---
+---
+All fleets:
+From	To	Size	TurnsRem
+18		3	22	1
+6		22	5	1
+14		4	22	3
+1		22	5	2
+6		22	5	4
+13		22	3	1
+1		22	5	3
+6		22	5	5
+13		22	3	2
+1		21	5	5
+4		21	19	3
+6		21	5	6
+13		21	3	3
+18		21	20	1
+3		11	44	2
+5		7	49	8
+22		9	46	5
+1		18	5	1
+1		18	5	2
+17		3	18	1
+1		18	5	3
+22		17	47	5
+All planets potentialCost (from initial planet):
+Owner	ID	Numships	Cost
+0		0	85		86
+2		1	6		12
+1		2	52		-162
+1		3	2		-40
+1		4	18		-48
+1		5	21		-131
+2		6	46		72
+0		7	48		99
+0		8	48		49
+0		9	45		93
+1		10	1		-46
+0		11	43		89
+0		12	43		44
+1		13	9		-33
+1		14	39		-96
+0		15	45		46
+1		16	45		-129
+1		17	8		-87
+2		18	55		114
+0		19	48		49
+0		20	48		49
+2		21	16		273
+2		22	70		283
+This is Turn 29!
+planet in danger id(17), NumShips: 8
+testing endangered planet(17)
+Owner	To	Turns	NumShips
+-----	--	-----	--------
+2		17	5		47
+---
+---
+safe planets to grab from: 8
+incomingFleets.size: 1
+incomingFleets turns remaining: 5
+safe planets turn distance: 2
+sending fleet: id, destID, ships: 2, 17, 17
+ships used in bestRecursive ID(2): 52
+size of cache is: 31
+final cache planets: 8
+i = 12
+moves form nicest Planets:
+sending [from, to, numships]: [2, 8, 49]
+done moves from nicest Planets
+ships used in bestRecursive ID(3): 2
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(4): 18
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(5): 21
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(10): 1
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(13): 9
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(14): 39
+size of cache is: 12
+final cache planets: 0
+i = 12
+moves form nicest Planets:
+done moves from nicest Planets
+ships used in bestRecursive ID(16): 45
+size of cache is: 18
+final cache planets: 32
+i = 12
+moves form nicest Planets:
+sending [from, to, numships]: [16, 12, 44]
+done moves from nicest Planets
+starting closest Optimal...
+sending [from, to, numships]: [2, 8, 49]
+sending [from, to, numships]: [16, 12, 44]
+ending closest Optimal...
+Issueing orders!!
+sending [from, to, numships]: [2, 17, 17]
+sending [from, to, numships]: [3, 17, 2]
+sending [from, to, numships]: [2, 8, 49]
+sending [from, to, numships]: [16, 12, 44]
+Done attack.
+0.01 s
+

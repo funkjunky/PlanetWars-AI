@@ -1,0 +1,600 @@
+#ifndef GENERALTOOLS_H
+#define GENERALTOOLS_H
+
+#include <vector>
+#include <map>
+#include <cmath>
+#include <cstdlib>
+#include <algorithm>
+
+#include <boost/bind.hpp>
+
+#include "PlanetWars.h"
+
+class Move
+{
+	public:
+	Move()
+		:fleetsUsed(), destination(9999,9999,9999,9999,9999,9999)
+	{}
+	Move(const std::map<Planet, unsigned>& fleets, const Planet& dest)
+		:fleetsUsed(fleets), destination(dest)
+	{}
+
+	Move(const Planet& planet, unsigned numOfShips, const Planet& dest)
+		:fleetsUsed(), destination(dest)
+	{
+		fleetsUsed[planet] = numOfShips;
+	}
+
+	Move(const Planet& dest)
+		:fleetsUsed(), destination(dest)
+	{}
+
+	void addFleet(const Planet& p, unsigned fleets)
+	{
+		fleetsUsed[p] = fleets;
+	}
+
+	Planet Destination() const
+	{
+		return destination;
+	}
+	std::map<Planet, unsigned> FleetsUsed() const
+	{
+		return fleetsUsed;
+	}
+	Planet PlanetOne() const
+	{
+		return fleetsUsed.begin()->first;
+	}
+	unsigned PlanetOneShips() const
+	{
+		return fleetsUsed.begin()->second;
+	}
+
+	void IssueOrders(const PlanetWars& pw) const
+	{
+		debugMove();
+		for(std::map<Planet, unsigned>::const_iterator it = fleetsUsed.begin();
+					it != fleetsUsed.end(); ++it)
+			pw.IssueOrder(it->first.PlanetID(), destination.PlanetID()
+									, it->second);
+	}
+
+	void debugMove() const
+	{
+		for(std::map<Planet, unsigned>::const_iterator it = fleetsUsed.begin();
+					it != fleetsUsed.end(); ++it)
+			debug << "sending [from, to, numships]: ["
+						<< it->first.PlanetID() << ", "
+						<< destination.PlanetID() << ", "
+						<< it->second << "]" << std::endl;
+	}
+
+	private:
+	Planet destination;
+	std::map<Planet, unsigned> fleetsUsed; 
+};
+
+
+unsigned getProductionOfPlanets(std::vector<Planet> planets);
+
+bool weAreWinning(unsigned turnsBenefit, const PlanetWars& pw, int modifier);
+
+template <typename T>
+int pShipsSum(T begin, T end);
+
+template <typename T>
+int pGrowthSum(T begin, T end);
+
+int getPotentialCost
+(const Planet& planet, unsigned turnsAway, const PlanetWars& pw);
+
+unsigned xTurnBenefit
+(unsigned xTurns, unsigned turnsTillTakeOver, const Planet& planet);
+
+bool numshipsLT(const Fleet& a, const Fleet& b);
+
+bool enemyIsAttacking(const Planet& p, const PlanetWars& pw);
+
+//based on empty cells having -1 in them.
+int indexRoundDown(const std::vector<int>& v, unsigned index);
+
+template <typename T> void updatePlanetsByMove
+(T begin, T end, const Move& move);
+
+int myTotalShips(const PlanetWars& pw);
+
+Planet getOriginalPlanet(const Planet& p, const PlanetWars& pw);
+
+template <typename T> void debugFleets(const T begin, const T end);
+
+void debugAllFleets(const PlanetWars& pw);
+
+bool destNEQplanet(const Fleet& f, const Planet& p);
+
+bool fDistLT(const Fleet& a, const Fleet& b);
+
+bool idEQ(const Planet& a, const Planet& b);
+
+bool growthGT(const Planet& a, const Planet& b);
+
+bool closerP(const Planet& a, const Planet& b, const Planet& ref);
+
+std::vector<Fleet> fleetsIncomingToPlanet(const Planet& p, const PlanetWars& pw);
+
+unsigned planetTurnDistance(const Planet& p1, const Planet& p2);
+
+//gets the growth rate total of a vector of planets
+unsigned getProductionOfPlanets(std::vector<Planet> planets)
+{
+	unsigned total = 0;
+	for(std::vector<Planet>::iterator it = planets.begin();
+			it != planets.end();
+			++it)
+		total += it->GrowthRate();
+
+	return total;
+}
+
+//TODO: cache
+int getPotentialCost(const Planet& planet, unsigned turnsAway, const PlanetWars& pw)
+{
+	int owner = planet.Owner();
+	int potentialCost;
+	if(owner == 1)
+		potentialCost = -planet.NumShips();
+	else
+		potentialCost = planet.NumShips(); //you need MORE ships, then p
+	//debug << "ID("<<planet.PlanetID()<<") potentialCost: " << potentialCost << std::endl;
+
+	//get and order all fleets coming to this planet.
+	std::vector<Fleet> incomingFleets = fleetsIncomingToPlanet(planet, pw);
+	std::sort(incomingFleets.begin(), incomingFleets.end(), fDistLT);
+
+	//variables necessary in this for loop.
+	unsigned growthIndex = 0;
+	int pendingOwner = owner;
+	for(std::vector<Fleet>::iterator it = incomingFleets.begin();
+			it != incomingFleets.end();
+			++it)
+	{
+		//get growth cost.
+		int growth=(it->TurnsRemaining() - growthIndex) * planet.GrowthRate();
+		//update growthIndex
+		growthIndex = it->TurnsRemaining();
+		//debug << "fleet("
+		//	<<it->SourcePlanet()<<","<<it->DestinationPlanet()
+		//	<<") Owner("<<it->Owner()<<") size("<<it->NumShips()<<") t-("<<it->TurnsRemaining()<<")"<< "~ planet owner: " 
+		//	<<owner << std::endl;
+
+		//add growth cost
+		if(owner == 1)
+			potentialCost -= growth;
+		else if(owner == 2)
+			potentialCost += growth;
+		//debug << "after growth: " << potentialCost << std::endl;
+
+		//add fleet cost
+		//TODO: triple check this! I'm sure the issue is around here!
+		if(it->Owner() == 1 
+				  || (abs(potentialCost) >= it->NumShips() 
+				  			&& owner != 2))
+			potentialCost -= it->NumShips();
+		else if(owner != 2) {
+			//the cost will go to 0, then up the number of ships the fleet has
+			//more than the potentialCost.
+			potentialCost = it->NumShips() - potentialCost;
+			//the enemy gained control of this planet.
+			pendingOwner = 2;
+		}
+		else
+			potentialCost += it->NumShips();
+
+		//debug << "after fleet: " << potentialCost << std::endl;
+
+		//did we gain control of this planet?
+		if(owner != 1 && potentialCost < 0)
+			pendingOwner = 1;
+
+		if(((it+1)->TurnsRemaining() - growthIndex) && potentialCost != 0)
+			owner = pendingOwner;
+	}
+	
+	//the remaining growth
+	if(turnsAway > growthIndex)
+	{
+		if(owner == 1)
+			potentialCost -= (turnsAway - growthIndex) * planet.GrowthRate();
+		else if(owner == 2)
+			potentialCost += (turnsAway - growthIndex) * planet.GrowthRate();
+	}
+	//else
+	//	debug << "turnsAway is less? " << turnsAway << std::endl;
+
+	if(owner != 1)
+		potentialCost += 1;	//you must OVERTAKE the planet, so add 1
+
+	return potentialCost;
+}
+
+unsigned xTurnBenefit(unsigned xTurns, unsigned turnsTillTakeOver
+								, const Planet& planet)
+{
+	//debug << "if positive xturnbenefit ID(" << planet.PlanetID() << "): "
+	//	<< (xTurns - turnsTillTakeOver)*planet.GrowthRate();
+	if(xTurns > turnsTillTakeOver)
+		return (xTurns - turnsTillTakeOver)*planet.GrowthRate();
+	else
+		return 0;
+}
+
+unsigned turnDistance(double x1, double y1, double x2, double y2)
+{
+	const double turnsPerUnit = 1.0;
+	double distance = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+
+	return (distance * turnsPerUnit) + 1;
+}
+
+//returns the distance between two planets
+//I should cache this once i get to more cpu intensive tasks.
+unsigned planetTurnDistance(const Planet& p1, const Planet& p2)
+{
+	//debug << "turnDistance: " << turnDistance(p1.X(), p1.Y(), p2.X(), p2.Y()) << std::endl;
+	return turnDistance(p1.X(), p1.Y(), p2.X(), p2.Y());
+}
+
+unsigned getCacheIndex(unsigned planetIndex, unsigned fleetSize)
+{
+	return (planetIndex * 100000) + fleetSize;
+}
+
+unsigned twoPowerOfX(unsigned x)
+{
+	static unsigned powsOf2[32] =
+		{0x1,0x2,0x4,0x8,0x10,0x20,0x40,0x80,0x100,0x200,0x400,0x800,0x1000,0x2000,0x4000,0x8000,0x10000,0x20000,0x40000,0x80000,0x100000,0x200000,0x400000,0x800000,0x1000000,0x2000000,0x4000000,0x8000000,0x10000000,0x20000000,0x40000000,0x80000000};
+	return powsOf2[x];
+}
+
+template <typename T>
+std::vector<Planet> getPlanetsFromBinaryMapping(unsigned bmapping, const T& begin, const T& end)
+{
+	static unsigned powsOf2[32] =
+		{0x1,0x2,0x4,0x8,0x10,0x20,0x40,0x80,0x100,0x200,0x400,0x800,0x1000,0x2000,0x4000,0x8000,0x10000,0x20000,0x40000,0x80000,0x100000,0x200000,0x400000,0x800000,0x1000000,0x2000000,0x4000000,0x8000000,0x10000000,0x20000000,0x40000000,0x80000000};
+	std::vector<Planet> peas;
+	unsigned i = 0;
+	for(T it = begin; it != end; ++it, ++i)
+		if(powsOf2[i] & bmapping)
+			peas.push_back(*it);
+	debug << "i = " << i << std::endl;
+
+	return peas;
+}
+
+//this takes out planets I'm already planning to own.
+//I need this function, because if I'm already going to be owning 
+// a planet, then the potentialCost function will return a negative 
+// value on the planet, and break my nicestPlanets function.
+std::vector<Planet> NotGoingToBeMyPlanets(const Planet& refPlanet, const PlanetWars& pw)
+{
+	std::vector<Planet> peas;
+	std::vector<Planet> NMpeas = pw.NotMyPlanets();
+
+	for(std::vector<Planet>::iterator it = NMpeas.begin(); it!=NMpeas.end();
+			++it)
+		if(getPotentialCost(*it, planetTurnDistance(*it, refPlanet), pw) > 0)
+			peas.push_back(*it);
+
+	return peas;
+}
+
+//CURRENTLY not in use.
+//returns whether if a planet is under attack by the enemy
+bool enemyIsAttacking(const Planet& p, const PlanetWars& pw)
+{
+	std::vector<Fleet> enemyFleets = pw.EnemyFleets();
+	for(std::vector<Fleet>::iterator it = enemyFleets.begin();
+			it != enemyFleets.end(); ++it)
+		if(it->DestinationPlanet() == p.PlanetID())
+			return true;
+
+	return false;
+}
+
+void debugPotentialWorthAndCost(const Planet& p, const PlanetWars& pw)
+{
+	typedef std::vector<Planet> Vec;
+	typedef Vec::iterator iter;
+	Vec otherPlanets = pw.NotMyPlanets();
+	debug << "Planet ID\t12 turn worth\tpotentialCost" << std::endl;
+	debug << "---------\t-------------\t-------------" << std::endl;
+	for(iter it = otherPlanets.begin(); it!=otherPlanets.end(); ++it)
+	{
+		debug << it->PlanetID() << "\t\t\t\t" 
+			<< xTurnBenefit(12, planetTurnDistance(*it, p), *it) << "\t\t\t\t" 
+			<< getPotentialCost(*it, planetTurnDistance(*it, p), pw)
+			<< std::endl;
+	}
+	debug << "---" << std::endl;
+	debug << "---" << std::endl;
+}
+
+void debugMyPlanets(const PlanetWars& pw)
+{
+	typedef std::vector<Planet> Vec;
+	typedef Vec::iterator iter;
+	Vec otherPlanets = pw.MyPlanets();
+	debug << "Planet ID\tNumShips" << std::endl;
+	debug << "---------\t--------" << std::endl;
+	for(iter it = otherPlanets.begin(); it!=otherPlanets.end(); ++it)
+	{
+		debug << it->PlanetID() << "\t\t\t\t" 
+			<< it->NumShips()
+			<< std::endl;
+	}
+	debug << "---" << std::endl;
+	debug << "---" << std::endl;
+}
+
+void debugPlanets(const PlanetWars& pw)
+{
+	typedef std::vector<Planet> Vec;
+	typedef Vec::iterator iter;
+	Vec otherPlanets = pw.Planets();
+	debug << "Planet ID\tNumShips" << std::endl;
+	debug << "---------\t--------" << std::endl;
+	for(iter it = otherPlanets.begin(); it!=otherPlanets.end(); ++it)
+	{
+		debug << it->PlanetID() << "\t\t\t\t" 
+			<< it->NumShips()
+			<< std::endl;
+	}
+	debug << "---" << std::endl;
+	debug << "---" << std::endl;
+}
+
+//this function alters the planets in the vector.
+template <typename T>
+void afterFleetsAttackMyPlanets(T begin, T end, const PlanetWars& pw)
+{
+	typedef std::vector<Fleet> fVec;
+	fVec enemyFleets = pw.EnemyFleets();
+	//sort fleets least to greatest.
+	std::sort(enemyFleets.begin(), enemyFleets.end(), numshipsLT);
+	fVec myFleets = pw.MyFleets();
+	std::sort(myFleets.begin(), myFleets.end(), numshipsLT);
+	std::vector<int> myFleetsArrive;
+	int latestFleet = 0;
+
+	for(T it2 = begin; it2 != end; ++it2)
+	{
+		myFleetsArrive.clear(); myFleetsArrive.resize(70, -1);
+		myFleetsArrive[0] = it2->NumShips();
+		//debug << "Initially numships: " << myFleetsArrive[0] << std::endl;
+		latestFleet = 0;
+		unsigned turnGrowthBeforeTO = 0;
+		int enemyShips = 0;
+		bool noLongerOwned = false;
+		for(fVec::iterator it = myFleets.begin(); it != myFleets.end()
+			  	; ++it)
+		{
+			if(it->DestinationPlanet() == it2->PlanetID())
+			{
+				myFleetsArrive[it->TurnsRemaining()] 
+					= myFleetsArrive[latestFleet] + it->NumShips();
+				if(it->TurnsRemaining() > latestFleet)
+					latestFleet = it->TurnsRemaining();
+			}
+		}
+		int finalReinforcements = myFleetsArrive[latestFleet];
+		//debug << "final reinforcements numships: " << finalReinforcements << std::endl;
+
+		//this for loop is just to get the number of turns the planet
+		//gets growth rate.
+		unsigned turnsGrowthRateBeforeTO = 0;
+		for(fVec::iterator it = enemyFleets.begin(); it != enemyFleets.end()
+			  	; ++it)
+		{
+			if(it->DestinationPlanet() == it2->PlanetID())
+			{
+				debug << "enemy fleet heading towards id("
+					<< it2->PlanetID() << "): " << it->NumShips() << std::endl;
+				enemyShips += it->NumShips();
+				//deciding how many turns we get growth before take over.
+				if(noLongerOwned || 
+					indexRoundDown(myFleetsArrive, it->TurnsRemaining())
+						  +(it2->GrowthRate()*it->TurnsRemaining()) 
+						  	< enemyShips)
+					noLongerOwned = true;
+				else
+					turnsGrowthRateBeforeTO = it->TurnsRemaining();
+			}
+		}
+		//add in growth rate, according to the first enemy fleet to arrive.
+		int growthReinforcements= (turnsGrowthRateBeforeTO*it2->GrowthRate());
+
+		it2->NumShips(finalReinforcements
+							+ growthReinforcements
+							- enemyShips);
+		debug << "finally numships id("<< it2->PlanetID() <<"): " << (finalReinforcements + growthReinforcements - enemyShips) << std::endl;
+		debug << "gotten from [reinf, growth, enemy]: ["
+			<< finalReinforcements << ", "
+			<< growthReinforcements << ", "
+			<< enemyShips << "]" << std::endl;
+	}
+}
+bool numshipsLT(const Fleet& a, const Fleet& b)
+{	return a.NumShips() < b.NumShips();	}
+//used above. Depends on blank entries having -1.
+int indexRoundDown(const std::vector<int>& v, unsigned index)
+{
+	++index;
+	while(v[--index] == -1);
+	return v[index];
+}
+
+template <typename T>
+void updatePlanetsByMove(T begin, T end, const Move& move)
+{
+	using namespace tr1boost::placeholders;
+	typedef std::map<Planet, unsigned> mapf;
+
+	mapf moveFleets = move.FleetsUsed();
+	for(mapf::iterator it = moveFleets.begin();
+			it != moveFleets.end(); ++it)
+	{
+		std::vector<Planet>::iterator p = std::find_if(begin, end, tr1boost::bind(idEQ, _1, it->first));
+		p->NumShips(p->NumShips() - it->second);
+	}
+}
+
+template <typename T>
+//I know this isn't the most effecient method, but effeciency is yet necessary.
+T pShipsMax(T begin, T end)
+{
+	int max = -99999;
+	T best = end;
+	for(T it = begin; it != end; ++it)
+		if(it->NumShips() > max)
+			max = (best = it)->NumShips();
+
+	return best;
+}
+template <typename T>
+int pShipsSum(T begin, T end)
+{
+	int sum = 0;
+
+	for(T it = begin; it != end; ++it)
+		sum += it->NumShips();
+
+	return sum;
+}
+
+template <typename T>
+int pGrowthSum(T begin, T end)
+{
+	int sum = 0;
+
+	for(T it = begin; it != end; ++it)
+		sum += it->GrowthRate();
+
+	return sum;
+}
+
+int myTotalShips(const PlanetWars& pw)
+{
+	int sum = 0;
+	std::vector<Planet> mypeas = pw.MyPlanets();
+	for(std::vector<Planet>::iterator it = mypeas.begin();
+			it != mypeas.end();
+			++it)
+		sum += it->NumShips();
+
+	return sum;
+}
+
+Planet getOriginalPlanet(const Planet& p, const PlanetWars& pw)
+{
+		std::vector<Planet> peas = pw.Planets();
+		return *(std::find_if(peas.begin(),
+										peas.end(),
+										tr1boost::bind(idEQ, _1, p)));
+}
+
+void debugAllFleets(const PlanetWars& pw)
+{
+	typedef std::vector<Fleet> Vec;
+	Vec otherPlanets = pw.Fleets();
+	
+	debugFleets(otherPlanets.begin(), otherPlanets.end());
+}
+
+template <typename T>
+void debugFleets(const T begin, const T end)
+{
+	debug << "Owner\tTo\tTurns\tNumShips" << std::endl;
+	debug << "-----\t--\t-----\t--------" << std::endl;
+	for(T it = begin; it!=end; ++it)
+	{
+		debug << it->Owner() << "\t\t" 
+			<< it->DestinationPlanet() << "\t"
+			<< it->TurnsRemaining() << "\t\t"
+			<< it->NumShips()
+			<< std::endl;
+	}
+	debug << "---" << std::endl;
+	debug << "---" << std::endl;
+}
+
+void setStartingAverageDistance(const PlanetWars& pw)
+{
+	unsigned count = 0;
+	unsigned sum = 0;
+	std::vector<Planet> otherPlanets = pw.NotMyPlanets();
+	Planet first = pw.MyPlanets()[0];
+
+	for(std::vector<Planet>::iterator it = otherPlanets.begin();
+				it != otherPlanets.end(); ++it, ++count)
+		sum += planetTurnDistance(first, *it);
+
+	//so this way the planets in the middle get counted as if their were 3 turns for them to accumulate.
+	startingAverageDistance = (sum / count);
+}	
+bool destNEQplanet(const Fleet& f, const Planet& p)
+{	return f.DestinationPlanet() != p.PlanetID();	}
+bool fDistLT(const Fleet& a, const Fleet& b)
+{	return a.TurnsRemaining() < b.TurnsRemaining();	}
+bool idEQ(const Planet& a, const Planet& b)
+{	return a.PlanetID() == b.PlanetID();	}
+bool growthGT(const Planet& a, const Planet& b)
+{	return a.GrowthRate() > b.GrowthRate();	}
+bool closerP(const Planet& a, const Planet& b, const Planet& ref)
+{	return planetTurnDistance(a, ref) <= planetTurnDistance(b, ref);	}
+
+std::vector<Fleet> fleetsIncomingToPlanet(const Planet& p, const PlanetWars& pw)
+{
+	using namespace tr1boost::placeholders;
+	std::vector<Fleet> incomingFleets = pw.Fleets();
+	std::vector<Fleet>::iterator fend
+		= std::remove_if(incomingFleets.begin(), incomingFleets.end()
+								, tr1boost::bind(destNEQplanet, _1, p));
+	incomingFleets.erase(fend, incomingFleets.end());
+
+	return incomingFleets;
+}
+
+bool weAreWinning(unsigned turnsBenefit, const PlanetWars& pw, int modifier)
+{
+	std::vector<Planet> myPlanets = pw.MyPlanets();
+	std::vector<Planet> enemyPlanets = pw.MyPlanets();
+
+	int myScore = pShipsSum(myPlanets.begin(), myPlanets.end())
+						+ pGrowthSum(myPlanets.begin(), myPlanets.end())
+							* turnsBenefit;
+	int enemyScore = pShipsSum(enemyPlanets.begin(), enemyPlanets.end())
+							+ pGrowthSum(enemyPlanets.begin(), enemyPlanets.end())
+								* turnsBenefit;
+
+	return (modifier * myScore) > enemyScore;
+}
+
+unsigned hackedMoveTurnsAway(const Move& a)
+{
+	return planetTurnDistance(a.PlanetOne(), a.Destination());
+}
+
+std::vector<Move> mapValues(std::map<int, Move>::iterator begin
+										, std::map<int, Move>::iterator end)
+{
+	std::vector<Move> result;
+	for(std::map<int, Move>::iterator it = begin; it != end; ++it)
+		result.push_back(it->second);
+
+	return result;
+}
+
+
+#endif

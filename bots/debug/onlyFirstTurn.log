@@ -1,0 +1,1506 @@
+Turn 1: 
+Planet ID	12 turn worth	potentialCost
+---------	-------------	-------------
+0				0				92
+2				0				196
+3				15				30
+4				0				30
+5				0				82
+6				4				82
+7				0				47
+8				35				47
+9				0				64
+10				0				64
+11				0				48
+12				16				48
+13				0				35
+14				18				35
+15				0				90
+16				0				90
+17				0				36
+18				6				36
+19				30				23
+20				0				23
+21				9				70
+22				0				70
+---
+---
+ships used in bestRecursive: 100
+cache missed: 100
+distance between begin and end: 22
+cache missed: 100008
+distance between begin and end: 21
+Planet 2 is too big.
+cache missed: 200008
+distance between begin and end: 20
+Planet 3 is too big.
+cache missed: 300008
+distance between begin and end: 19
+Planet 4 is too big.
+cache missed: 400008
+distance between begin and end: 18
+Planet 5 is too big.
+cache missed: 500008
+distance between begin and end: 17
+Planet 6 is too big.
+cache missed: 600008
+distance between begin and end: 16
+Planet 7 is too big.
+cache missed: 700008
+distance between begin and end: 15
+Planet 8 is too big.
+cache missed: 800008
+distance between begin and end: 14
+Planet 9 is too big.
+cache missed: 900008
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000008
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100008
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200008
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300008
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400008
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500008
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600008
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700008
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800008
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900008
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000008
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100008
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 100100
+distance between begin and end: 21
+Planet 2 is too big.
+cache missed: 200100
+distance between begin and end: 20
+cache missed: 300070
+distance between begin and end: 19
+cache missed: 400040
+distance between begin and end: 18
+Planet 5 is too big.
+cache missed: 500040
+distance between begin and end: 17
+Planet 6 is too big.
+cache missed: 600040
+distance between begin and end: 16
+Planet 7 is too big.
+cache missed: 700040
+distance between begin and end: 15
+Planet 8 is too big.
+cache missed: 800040
+distance between begin and end: 14
+Planet 9 is too big.
+cache missed: 900040
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000040
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100040
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200040
+distance between begin and end: 10
+cache missed: 1300005
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400005
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500005
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600005
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700005
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800005
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900005
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000005
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100005
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1300040
+distance between begin and end: 9
+cache found!: 1400005
+done forking!
+cache missed: 1400040
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500040
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600040
+distance between begin and end: 6
+cache missed: 1700004
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800004
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900004
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000004
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100004
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1700040
+distance between begin and end: 5
+cache found!: 1800004
+done forking!
+cache missed: 1800040
+distance between begin and end: 4
+cache missed: 1900017
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000017
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100017
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1900040
+distance between begin and end: 3
+cache found!: 2000017
+done forking!
+cache missed: 2000040
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100040
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 40 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 400070
+distance between begin and end: 18
+Planet 5 is too big.
+cache missed: 500070
+distance between begin and end: 17
+Planet 6 is too big.
+cache missed: 600070
+distance between begin and end: 16
+cache missed: 700023
+distance between begin and end: 15
+Planet 8 is too big.
+cache missed: 800023
+distance between begin and end: 14
+Planet 9 is too big.
+cache missed: 900023
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000023
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100023
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200023
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300023
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400023
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500023
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600023
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700023
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800023
+distance between begin and end: 4
+cache missed: 1900000
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000000
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100000
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1900023
+distance between begin and end: 3
+cache found!: 2000000
+done forking!
+cache missed: 2000023
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100023
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 23 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 700070
+distance between begin and end: 15
+cache found!: 800023
+done forking!
+cache missed: 800070
+distance between begin and end: 14
+cache missed: 900006
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000006
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100006
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200006
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300006
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400006
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500006
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600006
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700006
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800006
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900006
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000006
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100006
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 900070
+distance between begin and end: 13
+cache found!: 1000006
+done forking!
+cache missed: 1000070
+distance between begin and end: 12
+cache missed: 1100022
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200022
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300022
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400022
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500022
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600022
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700022
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800022
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900022
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000022
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100022
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1100070
+distance between begin and end: 11
+cache found!: 1200022
+done forking!
+cache missed: 1200070
+distance between begin and end: 10
+cache missed: 1300035
+distance between begin and end: 9
+cache missed: 1400000
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500000
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600000
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700000
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800000
+distance between begin and end: 4
+Planet 19 is too big.
+cache found!: 1900000
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1400035
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500035
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600035
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700035
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800035
+distance between begin and end: 4
+cache missed: 1900012
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000012
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100012
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1900035
+distance between begin and end: 3
+cache found!: 2000012
+done forking!
+cache missed: 2000035
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100035
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 35 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+cache missed: 1300070
+distance between begin and end: 9
+cache found!: 1400035
+done forking!
+cache missed: 1400070
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500070
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600070
+distance between begin and end: 6
+cache missed: 1700034
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800034
+distance between begin and end: 4
+cache missed: 1900011
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000011
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100011
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1900034
+distance between begin and end: 3
+cache found!: 2000011
+done forking!
+cache missed: 2000034
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100034
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 34 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 1700070
+distance between begin and end: 5
+cache found!: 1800034
+done forking!
+cache missed: 1800070
+distance between begin and end: 4
+cache missed: 1900047
+distance between begin and end: 3
+cache missed: 2000024
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100024
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 2000047
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100047
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+cache missed: 1900070
+distance between begin and end: 3
+cache found!: 2000047
+done forking!
+cache missed: 2000070
+distance between begin and end: 2
+cache found!: 2100000
+done forking!
+cache missed: 2100070
+distance between begin and end: 1
+done forking!
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 70 > potentialCost: 70
+newplanetcache:2097152
+newplanet ships: 69
+planetcache:1048576
+done forking!
+planetcache:1048576
+done forking!
+fleetsLeft: 70 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+fleetsLeft: 70 > potentialCost: 36
+newplanetcache:262144
+newplanet ships: 35
+planetcache:393216
+done forking!
+planetcache:393216
+planetcache:393216
+planetcache:393216
+done forking!
+fleetsLeft: 70 > potentialCost: 35
+newplanetcache:16384
+newplanet ships: 34
+planetcache:270336
+done forking!
+planetcache:270336
+done forking!
+planetcache:270336
+done forking!
+planetcache:270336
+done forking!
+planetcache:270336
+done forking!
+planetcache:270336
+done forking!
+fleetsLeft: 70 > potentialCost: 47
+newplanetcache:256
+newplanet ships: 46
+planetcache:262272
+done forking!
+planetcache:262272
+planetcache:262272
+planetcache:262272
+done forking!
+planetcache:262272
+done forking!
+cache missed: 300100
+distance between begin and end: 19
+cache found!: 400070
+done forking!
+cache missed: 400100
+distance between begin and end: 18
+cache missed: 500018
+distance between begin and end: 17
+Planet 6 is too big.
+cache missed: 600018
+distance between begin and end: 16
+Planet 7 is too big.
+cache missed: 700018
+distance between begin and end: 15
+Planet 8 is too big.
+cache missed: 800018
+distance between begin and end: 14
+Planet 9 is too big.
+cache missed: 900018
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000018
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100018
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200018
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300018
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400018
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500018
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600018
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700018
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800018
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900018
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000018
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100018
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 500100
+distance between begin and end: 17
+cache found!: 600018
+done forking!
+cache missed: 600100
+distance between begin and end: 16
+cache missed: 700053
+distance between begin and end: 15
+cache missed: 800006
+distance between begin and end: 14
+Planet 9 is too big.
+cache found!: 900006
+planetcache:0
+done forking!
+cache missed: 800053
+distance between begin and end: 14
+Planet 9 is too big.
+cache missed: 900053
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000053
+distance between begin and end: 12
+cache missed: 1100005
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200005
+distance between begin and end: 10
+Planet 13 is too big.
+cache found!: 1300005
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1100053
+distance between begin and end: 11
+cache found!: 1200005
+done forking!
+cache missed: 1200053
+distance between begin and end: 10
+cache found!: 1300018
+done forking!
+cache missed: 1300053
+distance between begin and end: 9
+cache found!: 1400018
+done forking!
+cache missed: 1400053
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500053
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600053
+distance between begin and end: 6
+cache missed: 1700017
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800017
+distance between begin and end: 4
+Planet 19 is too big.
+cache found!: 1900017
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1700053
+distance between begin and end: 5
+cache found!: 1800017
+done forking!
+cache missed: 1800053
+distance between begin and end: 4
+cache missed: 1900030
+distance between begin and end: 3
+cache missed: 2000007
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100007
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 2000030
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100030
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+cache missed: 1900053
+distance between begin and end: 3
+cache found!: 2000030
+done forking!
+cache missed: 2000053
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100053
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 53 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+fleetsLeft: 53 > potentialCost: 47
+newplanetcache:256
+newplanet ships: 46
+planetcache:128
+done forking!
+cache missed: 700100
+distance between begin and end: 15
+cache found!: 800053
+done forking!
+cache missed: 800100
+distance between begin and end: 14
+cache missed: 900036
+distance between begin and end: 13
+Planet 10 is too big.
+cache missed: 1000036
+distance between begin and end: 12
+Planet 11 is too big.
+cache missed: 1100036
+distance between begin and end: 11
+Planet 12 is too big.
+cache missed: 1200036
+distance between begin and end: 10
+cache missed: 1300001
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400001
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500001
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600001
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700001
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800001
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900001
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000001
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100001
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1300036
+distance between begin and end: 9
+cache found!: 1400001
+done forking!
+cache missed: 1400036
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500036
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600036
+distance between begin and end: 6
+cache found!: 1700000
+done forking!
+cache missed: 1700036
+distance between begin and end: 5
+cache found!: 1800000
+done forking!
+cache missed: 1800036
+distance between begin and end: 4
+cache missed: 1900013
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000013
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100013
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1900036
+distance between begin and end: 3
+cache found!: 2000013
+done forking!
+cache missed: 2000036
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100036
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 36 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 900100
+distance between begin and end: 13
+cache found!: 1000036
+done forking!
+cache missed: 1000100
+distance between begin and end: 12
+cache missed: 1100052
+distance between begin and end: 11
+cache missed: 1200004
+distance between begin and end: 10
+Planet 13 is too big.
+cache missed: 1300004
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400004
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500004
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600004
+distance between begin and end: 6
+Planet 17 is too big.
+cache found!: 1700004
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1200052
+distance between begin and end: 10
+cache missed: 1300017
+distance between begin and end: 9
+Planet 14 is too big.
+cache missed: 1400017
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500017
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600017
+distance between begin and end: 6
+Planet 17 is too big.
+cache found!: 1700017
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1300052
+distance between begin and end: 9
+cache found!: 1400017
+done forking!
+cache missed: 1400052
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500052
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600052
+distance between begin and end: 6
+cache missed: 1700016
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800016
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900016
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000016
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100016
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1700052
+distance between begin and end: 5
+cache found!: 1800016
+done forking!
+cache missed: 1800052
+distance between begin and end: 4
+cache missed: 1900029
+distance between begin and end: 3
+cache found!: 2000006
+done forking!
+cache missed: 2000029
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100029
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+cache missed: 1900052
+distance between begin and end: 3
+cache found!: 2000029
+done forking!
+cache missed: 2000052
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100052
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 52 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+planetcache:262144
+done forking!
+cache missed: 1100100
+distance between begin and end: 11
+cache found!: 1200052
+done forking!
+cache missed: 1200100
+distance between begin and end: 10
+cache missed: 1300065
+distance between begin and end: 9
+cache missed: 1400030
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500030
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600030
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700030
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800030
+distance between begin and end: 4
+cache missed: 1900007
+distance between begin and end: 3
+Planet 20 is too big.
+cache found!: 2000007
+planetcache:0
+done forking!
+cache found!: 1900030
+done forking!
+fleetsLeft: 30 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 1400065
+distance between begin and end: 8
+Planet 15 is too big.
+cache missed: 1500065
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600065
+distance between begin and end: 6
+cache missed: 1700029
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800029
+distance between begin and end: 4
+cache found!: 1900006
+done forking!
+cache found!: 1900029
+done forking!
+fleetsLeft: 29 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+planetcache:262144
+done forking!
+cache missed: 1700065
+distance between begin and end: 5
+cache found!: 1800029
+done forking!
+cache missed: 1800065
+distance between begin and end: 4
+cache missed: 1900042
+distance between begin and end: 3
+cache missed: 2000019
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100019
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 2000042
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100042
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+cache missed: 1900065
+distance between begin and end: 3
+cache found!: 2000042
+done forking!
+cache missed: 2000065
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100065
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 65 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+fleetsLeft: 65 > potentialCost: 36
+newplanetcache:262144
+newplanet ships: 35
+planetcache:393216
+done forking!
+planetcache:393216
+planetcache:393216
+planetcache:393216
+done forking!
+fleetsLeft: 65 > potentialCost: 35
+newplanetcache:16384
+newplanet ships: 34
+planetcache:270336
+done forking!
+cache missed: 1300100
+distance between begin and end: 9
+cache found!: 1400065
+done forking!
+cache missed: 1400100
+distance between begin and end: 8
+cache missed: 1500010
+distance between begin and end: 7
+Planet 16 is too big.
+cache missed: 1600010
+distance between begin and end: 6
+Planet 17 is too big.
+cache missed: 1700010
+distance between begin and end: 5
+Planet 18 is too big.
+cache missed: 1800010
+distance between begin and end: 4
+Planet 19 is too big.
+cache missed: 1900010
+distance between begin and end: 3
+Planet 20 is too big.
+cache missed: 2000010
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100010
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 1500100
+distance between begin and end: 7
+cache found!: 1600010
+done forking!
+cache missed: 1600100
+distance between begin and end: 6
+cache missed: 1700064
+distance between begin and end: 5
+cache missed: 1800028
+distance between begin and end: 4
+cache found!: 1900005
+done forking!
+cache missed: 1900028
+distance between begin and end: 3
+cache found!: 2000005
+done forking!
+cache missed: 2000028
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100028
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 28 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+cache missed: 1800064
+distance between begin and end: 4
+cache missed: 1900041
+distance between begin and end: 3
+cache found!: 2000018
+done forking!
+cache missed: 2000041
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100041
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+cache missed: 1900064
+distance between begin and end: 3
+cache found!: 2000041
+done forking!
+cache missed: 2000064
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100064
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 64 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:262144
+done forking!
+fleetsLeft: 64 > potentialCost: 36
+newplanetcache:262144
+newplanet ships: 35
+planetcache:393216
+done forking!
+cache missed: 1700100
+distance between begin and end: 5
+cache found!: 1800064
+done forking!
+cache missed: 1800100
+distance between begin and end: 4
+cache missed: 1900077
+distance between begin and end: 3
+cache missed: 2000054
+distance between begin and end: 2
+Planet 21 is too big.
+cache missed: 2100054
+distance between begin and end: 1
+Planet 22 is too big.
+planetcache:0
+planetcache:0
+done forking!
+cache missed: 2000077
+distance between begin and end: 2
+cache found!: 2100007
+done forking!
+cache missed: 2100077
+distance between begin and end: 1
+done forking!
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 77 > potentialCost: 70
+newplanetcache:2097152
+newplanet ships: 69
+planetcache:1048576
+done forking!
+planetcache:1048576
+done forking!
+cache missed: 1900100
+distance between begin and end: 3
+cache found!: 2000077
+done forking!
+cache missed: 2000100
+distance between begin and end: 2
+cache found!: 2100030
+done forking!
+cache missed: 2100100
+distance between begin and end: 1
+done forking!
+done forking!
+planetcache:0
+done forking!
+fleetsLeft: 100 > potentialCost: 70
+newplanetcache:2097152
+newplanet ships: 69
+planetcache:1048576
+done forking!
+planetcache:1048576
+done forking!
+fleetsLeft: 100 > potentialCost: 23
+newplanetcache:524288
+newplanet ships: 22
+planetcache:1310720
+done forking!
+planetcache:1310720
+done forking!
+planetcache:1310720
+done forking!
+planetcache:1310720
+done forking!
+planetcache:1310720
+done forking!
+fleetsLeft: 100 > potentialCost: 35
+newplanetcache:16384
+newplanet ships: 34
+planetcache:401408
+done forking!
+planetcache:401408
+done forking!
+planetcache:401408
+done forking!
+planetcache:401408
+done forking!
+planetcache:401408
+done forking!
+planetcache:401408
+done forking!
+fleetsLeft: 100 > potentialCost: 47
+newplanetcache:256
+newplanet ships: 46
+planetcache:262272
+done forking!
+planetcache:262272
+done forking!
+planetcache:262272
+done forking!
+planetcache:262272
+done forking!
+planetcache:262272
+done forking!
+fleetsLeft: 100 > potentialCost: 30
+newplanetcache:8
+newplanet ships: 29
+planetcache:262276
+planetcache:262276
+done forking!
+planetcache:262276
+NicestPlanets, recursion iterations: 310
+size of cache is: 310
+Final cache index: 100
+final cache planets: 262276
+i = 22
+done recursion.29
+planet id: 3
+planet numships: 29
+planet id: 8
+planet numships: 46
+planet id: 19
+planet numships: 22
+done.

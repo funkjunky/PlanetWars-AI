@@ -1,0 +1,42 @@
+Todo:
+-implement reinforcements
+	-fix the damn fringe....
+	-define defensiveScoreToReinforce
+	-define offensiveScoreToReinforce
+-implement solidifyChainReinforcementMoves
+	-define the function
+	-define the functions in the function.
+-consider attacking algorithms... either the pair thing, or further.
+(try and do this progressively.)
+
+
+Not sure:
+-change nicestPlanets to nicestMoves
+-add in myNicestPlanets to sort and help choose the planet in my latest bot.
+
+Done:
+-fill in prototypes and cull old ones.
+-cull out unused codethat will never be used.
+-turn nicestPlanets into a class, with an empty functor, and a 
+	constructor that takes all of the regular parameters.
+	_bestRecursive will obviously also be in this class with the cache
+	global variables.
+-clean up code.
+	-clean up nicestPlanets
+	-clean up _bestRecursive
+	-finish cleaning up AITools.h
+	-finish cleaning up GeneralTools.h
+	-create a new bot name called cleanedup.cc and clean the code up in it.
+-fix getPotentialCost... have it act more like doDefence I believe.
+	-so check each turn, who would own the planet. This gives a MUCH
+		more accurate representation.
+		(this is actually causing me to send WAY more ships than i need.)
+-nicestPlanets should reutnr a move list maybe.
+-add in doing nicest for all planets and choosing the highest xTurnBenefit pairs to do.
+-implement reinforcements
+	-define regular getReinforcementMoves
+	-define updatePlanetsByMove
+	-define getNotFringePlanets
+	-define closestToReinforce
+	-compile, and test.
+	-getReinforcementMoves should take a list of safe planets.
